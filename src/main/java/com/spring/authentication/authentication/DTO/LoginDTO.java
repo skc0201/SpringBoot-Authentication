@@ -15,11 +15,8 @@ import lombok.Setter;
 @AllArgsConstructor
 public class LoginDTO {
 
-        @Email(message = "Please enter valid email address!!!")
         private String email;
 
-        @NotBlank(message = "Please enter password")
-        @Size(min = 8)
         private String password;
 
 }

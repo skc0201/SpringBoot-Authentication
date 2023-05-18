@@ -24,12 +24,12 @@ public class User {
     private String name;
     @Column(name = "email")
     @NotBlank(message = "Email is mandatory")
-//    @Email(regexp = "^[a-z0-9](\\.?[a-z0-9]){5,}@zemosolabs\\.com$" , message = "Enter Valid email address!!")
+   @Email(regexp = "^[a-z0-9](\\.?[a-z0-9]){5,}@zemosolabs\\.com$" , message = "Enter Valid email address!!")
     private String email;
 
     @Column(name = "password")
     @Size(min = 8 , message = "Password should have minimum 8 characters!!!")
-//    @Pattern(regexp = "/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[^\\w\\s]).{8,}$/")
+   @Pattern(regexp = "/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[^\\w\\s]).{8,}$/")
     private String password;
 
 
